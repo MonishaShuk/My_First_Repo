@@ -1,0 +1,22 @@
+nav{
+    height:100px;
+}
+.nav-item{
+    display:inline-block;
+    border:1px solid #000000;
+}
+
+.left{
+    width:29%;
+}
+.profile-pic{
+    text-align:center;
+}
+.image{
+    max-height:1auto;
+    max-width:200px;
+}
+.right{
+    width:70%;
+}
+
