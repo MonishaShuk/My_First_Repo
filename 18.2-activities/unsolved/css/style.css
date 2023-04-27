@@ -3,12 +3,47 @@ body {
 }
 
 /* Grid CSS */
-
+#heroGrid{
+  margin:0px 5%;
+  display:grid;
+  min-height:500px;
+  height:70vh;
+  grid-template-rows:75% 25%;
+  grid-template-columns:75% 25%;
+  grid-template-areas:
+  "featuredProduct secondaryProduct"
+  "featuredProduct CTA"
+  ;
+}
 
 /* Category Grid CSS */
+#featuredProduct {
+grid-area:featuredProduct;
+background-image: url('../images/furniture1@2x.png');
 
+}
 
+#secondaryProduct {
+grid-area:secondaryProduct;
+background-image: url('../images/furniture2@2x.png');
 
+}
+
+#CTA{
+  grid-area: CTA;
+  background-image: url('../images/woodbg@2x.png');
+
+  justify-content: 0px 5px;
+  cursor: pointer;
+}
+
+.heroGridArea{
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+position: relative;
+}
 
 /* Navigation CSS */
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
@@ -67,10 +102,35 @@ h4 {
 }
 
 
-#headline p {
+#headline  {
   max-width: 350px;
   font-size: 16px;
   font-weight: 300;
   margin: 0px 0px;
   color: #636364;
+  border: 5px solid #FF6200;
+  background-color: rgba(255,255,255,0.8);
+  position: absolute;
+  top:33%;
+  left:35%;
+  width:500px;
+  height:300px;
+  padding:20px;
+  z-index:1
 }
+
+@media only screen and (min-width: 1001px){
+  .navmenu{
+    display: none;
+  }
+
+@media only screen and (max-width: 1000px){
+  navigation{
+    display: none;
+  }
+  .navmenu{
+    display:inline-block;
+
+  .icons{margin-left:auto;}
+}
+  
